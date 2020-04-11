@@ -4,11 +4,34 @@
   text-align: center;
   margin-bottom: 50px;
 }
-.body {
+#root {
   background-color: #333;
   color: white;
   font-family: lexend mega;
 }
 h1 {
   font-family: lexend giga;
+  font-size: 6rem !important;
+  font-weight: 900 !important;
+  color: #333;
+}
+.header {
+  text-align: center;
+  background-color: #ffe35c;
+  padding: 30px 0;
+  color: #333;
+}
+.card-body {
+  background-color: #ff5042;
+}
+.card:hover,
+.card-body:hover {
+  background-color: #42ff90;
+  color: #333;
+}
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #ffe35c;
+  color: #333;
 }

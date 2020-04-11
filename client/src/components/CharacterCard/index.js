@@ -4,17 +4,18 @@ import Col from "react-bootstrap/Col";
 
 function FriendCard(props) {
   return (
-    <Col sm={4}>
+    <Col sm={3}>
       <Card
         style={{
           height: "150px",
           width: "200px",
           marginBottom: "50px",
           backgroundColor: "transparent",
+          cursor: "pointer",
         }}
         onClick={() => props.handleClick(props.id)}
       >
-        <Card.Body style={{ backgroundColor: "#FF5042" }}>
+        <Card.Body>
           <Card.Text
             style={{
               marginTop: "-10px",

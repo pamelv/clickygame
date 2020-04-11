@@ -1,7 +1,10 @@
 import React from "react";
 import CharacterCard from "./components/CharacterCard";
 import characters from "./characters.json";
+import Nav from "./components/Nav";
 import "./App.css";
+import Container from "react-bootstrap/Container";
+import Footer from "./components/Footer";
 
 class App extends React.Component {
   constructor(props) {
@@ -12,7 +15,7 @@ class App extends React.Component {
 
   updateStatus(characterId) {
     console.log(characterId);
-    this.state.characters.map((character) => {
+    this.state.characters.forEach((character) => {
       if (character.id === characterId && character.clicked !== true) {
         console.log(character);
         character.clicked = true;
@@ -35,7 +38,7 @@ class App extends React.Component {
   }
   resetGame() {
     this.setState({ score: 0 });
-    this.state.characters.map((character) => {
+    this.state.characters.forEach((character) => {
       character.clicked = false;
     });
   }
@@ -69,23 +72,27 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="body">
-        <h1 className="title">CLICKY GAME</h1>
-        <h3>{this.state.score}</h3>
-        <h1>{this.state.highestScore}</h1>
-        <h4>{this.state.message}</h4>
-        <div className="row">
-          {this.state.characters.map((character) => (
-            <CharacterCard
-              key={character.id}
-              id={character.id}
-              image={character.image}
-              handleClick={this.handleClick}
-              status={character.status}
-              name={character.name}
-            />
-          ))}
-        </div>
+      <div>
+        <Nav
+          score={this.state.score}
+          highestScore={this.state.highestScore}
+          message={this.state.message}
+        />
+        <Container className="body">
+          <div className="row" style={{ padding: "60px", marginLeft: "0" }}>
+            {this.state.characters.map((character) => (
+              <CharacterCard
+                key={character.id}
+                id={character.id}
+                image={character.image}
+                handleClick={this.handleClick}
+                status={character.status}
+                name={character.name}
+              />
+            ))}
+          </div>
+        </Container>
+        <Footer />
       </div>
     );
   }
