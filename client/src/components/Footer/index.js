@@ -7,7 +7,7 @@ function Footer(props) {
     <Row>
       <Col className="footer">
         <h5>
-          <a href={props.link} target="_blank">
+          <a href={props.link} target="_blank" rel="noopener noreferrer">
             GitHub Repo
           </a>
         </h5>

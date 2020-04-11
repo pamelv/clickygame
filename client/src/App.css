@@ -42,3 +42,9 @@ h5 > a:hover {
   color: #ff5042;
   text-decoration: none;
 }
+.score {
+  background-color: white;
+  color: #333;
+  padding: 15px 0;
+  text-align: center;
+}
