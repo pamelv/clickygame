@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Cartman",
+    "image": "https://vignette.wikia.nocookie.net/mattandtrey/images/9/9f/Cartman.jpg/revision/latest/scale-to-width-down/340?cb=20100530042515",
+    "clicked": false
+  },
+  {
+    "id": 2,
+    "name": "Kenny",
+    "image": "https://pbs.twimg.com/profile_images/812323997912363008/6PPhZErC_400x400.jpg",
+    "clicked": false
+  },
+  {
+    "id": 3,
+    "name": "Kyle",
+    "image": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-South-Park-Matt-Kyle-Broflovski.jpg",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "name": "Stan",
+    "image": "https://cdn.costumewall.com/wp-content/uploads/2017/09/stan-marsh.jpg",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "name": "Butters",
+    "image": "https://vignette.wikia.nocookie.net/southpark/images/c/c2/Butters_%28Facebook%29.jpg/revision/latest?cb=20101010032409",
+    "clicked": false
+  },
+  {
+    "id": 6,
+    "name": "Mr. Garrison",
+    "image": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-South-Park-Trey-Mr-Garrison.jpg",
+    "clicked": false
+  },
+  {
+    "id": 7,
+    "name": "Wendy",
+    "image": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-South-Park-Wendy-Testaburger.jpg",
+    "clicked": false
+  },
+  {
+    "id": 8,
+    "name": "Token",
+    "image": "https://vignette.wikia.nocookie.net/southpark/images/f/f6/Token1603.png/revision/latest/scale-to-width-down/340?cb=20120402010422",
+    "clicked": false
+  },
+  {
+    "id": 9,
+    "name": "Jimmy",
+    "image": "https://pbs.twimg.com/profile_images/2525785574/59q065z21vopnkkh7sz9_400x400.gif",
+    "clicked": false
+  },
+  {
+    "id": 10,
+    "name": "Randy",
+    "image": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-South-Park-Trey-Randy-Marsh.jpg",
+    "clicked": false
+  },
+  {
+    "id": 11,
+    "name": "Towelie",
+    "image": "https://southparkstudios.mtvnimages.com/images/shows/south-park/episode-thumbnails/season-5/south-park-s05e08-towelie_16x9.jpg?quality=0.8&grayscale=true",
+    "clicked": false
+  },
+  {
+    "id": 12,
+    "name": "Chef",
+    "image": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/09/14/16/south-park-chef.jpg?w968h681",
+    "clicked": false
+  },
+  {
+    "id": 13,
+    "name": "Bebe",
+    "image": "https://vignette.wikia.nocookie.net/southpark/images/7/77/Bebeboobs.jpg/revision/latest/scale-to-width-down/340?cb=20120206024033",
+    "clicked": false
+  },
+  {
+    "id": 14,
+    "name": "Terrance",
+    "image": "https://i.pinimg.com/originals/cb/b8/f7/cbb8f7da69c613ff6f3d9f9f9c63d37b.jpg",
+    "clicked": false
+  },
+  {
+    "id": 15,
+    "name": "Phillip",
+    "image": "https://i.pinimg.com/originals/a9/c6/9b/a9c69b691aa7d5cb84bb337a02c7908f.jpg",
+    "clicked": false
+  }
+]

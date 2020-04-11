@@ -1,25 +1,24 @@
 import React from "react";
-import FriendCard from "./components/FriendCard";
-import Wrapper from "./components/Wrapper";
-import friends from "./friends.json";
+import CharacterCard from "./components/CharacterCard";
+import characters from "./characters.json";
 import "./App.css";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { friends, score: 0, highestScore: 0, message: "" };
+    this.state = { characters, score: 0, highestScore: 0, message: "" };
     this.handleClick = this.handleClick.bind(this);
   }
 
-  updateStatus(friendId) {
-    console.log(friendId);
-    this.state.friends.map((friend) => {
-      if (friend.id === friendId && friend.clicked !== true) {
-        console.log(friend);
-        friend.clicked = true;
+  updateStatus(characterId) {
+    console.log(characterId);
+    this.state.characters.map((character) => {
+      if (character.id === characterId && character.clicked !== true) {
+        console.log(character);
+        character.clicked = true;
         this.setState({ message: "You guessed correct!" });
         this.correctGuess();
-      } else if (friend.id === friendId && friend.clicked !== false) {
+      } else if (character.id === characterId && character.clicked !== false) {
         this.setState({ message: "Incorrect guess!" });
         this.resetGame();
       }
@@ -36,15 +35,15 @@ class App extends React.Component {
   }
   resetGame() {
     this.setState({ score: 0 });
-    this.state.friends.map((friend) => {
-      friend.clicked = false;
+    this.state.characters.map((character) => {
+      character.clicked = false;
     });
   }
 
-  handleClick(friendId) {
-    this.updateStatus(friendId);
+  handleClick(characterId) {
+    this.updateStatus(characterId);
     this.setState({
-      friends: this.shuffle(this.state.friends),
+      characters: this.shuffle(this.state.characters),
     });
   }
 
@@ -70,22 +69,23 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1 className="title">Clicky Game</h1>
+      <div className="body">
+        <h1 className="title">CLICKY GAME</h1>
         <h3>{this.state.score}</h3>
         <h1>{this.state.highestScore}</h1>
         <h4>{this.state.message}</h4>
-        <Wrapper>
-          {this.state.friends.map((friend) => (
-            <FriendCard
-              key={friend.id}
-              id={friend.id}
-              image={friend.image}
+        <div className="row">
+          {this.state.characters.map((character) => (
+            <CharacterCard
+              key={character.id}
+              id={character.id}
+              image={character.image}
               handleClick={this.handleClick}
-              status={friend.status}
+              status={character.status}
+              name={character.name}
             />
           ))}
-        </Wrapper>
+        </div>
       </div>
     );
   }
