@@ -1,0 +1,26 @@
+{
+  "name": "clickygame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pamelv/clickygame.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pamelv/clickygame/issues"
+  },
+  "homepage": "https://github.com/pamelv/clickygame#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

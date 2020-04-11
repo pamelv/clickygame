@@ -1,13 +1,11 @@
 import React from "react";
-import "./style.css";
+import Card from "react-bootstrap/Card";
 
 function FriendCard(props) {
   return (
-    <div className="card" onClick={() => props.handleClick(props.id)}>
-      <div className="img-container">
-        <img alt={props.name} src={props.image} />
-      </div>
-    </div>
+    <Card onClick={() => props.handleClick(props.id)}>
+      <Card.Img variant="bottom" src={props.image} alt={props.name} />
+    </Card>
   );
 }
 
