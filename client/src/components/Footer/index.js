@@ -2,11 +2,15 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-function Footer() {
+function Footer(props) {
   return (
     <Row>
       <Col className="footer">
-        <h5>GitHub Repo</h5>
+        <h5>
+          <a href={props.link} target="_blank">
+            GitHub Repo
+          </a>
+        </h5>
         <small>Clicky Game 2020</small>
       </Col>
     </Row>

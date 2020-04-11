@@ -14,10 +14,8 @@ class App extends React.Component {
   }
 
   updateStatus(characterId) {
-    console.log(characterId);
     this.state.characters.forEach((character) => {
       if (character.id === characterId && character.clicked !== true) {
-        console.log(character);
         character.clicked = true;
         this.setState({ message: "You guessed correct!" });
         this.correctGuess();
@@ -92,7 +90,7 @@ class App extends React.Component {
             ))}
           </div>
         </Container>
-        <Footer />
+        <Footer link="https://github.com/pamelv/clickygame" />
       </div>
     );
   }

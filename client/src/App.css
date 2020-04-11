@@ -35,3 +35,10 @@ h1 {
   background-color: #ffe35c;
   color: #333;
 }
+h5 > a {
+  color: #333;
+}
+h5 > a:hover {
+  color: #ff5042;
+  text-decoration: none;
+}
